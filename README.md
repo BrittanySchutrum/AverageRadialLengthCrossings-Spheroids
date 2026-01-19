@@ -13,3 +13,4 @@ There are two parameters than can be adjusted to optimize the signal to noise ra
 1. **Excursion Length** = the minimum horizontal span (along the average radial length axis) during which a peak or valley remains above or below the mean radial length for it to be classified as a valid crossing
 2. **Minimum Crossing Distance** = A peak or valley must differ from the average radial length by at least this distance (in pixels) to qualify as a crossing
 
+![*Excursion Length and Minimum Crossing Distance Visualization](Min distance and excurs length.png)
