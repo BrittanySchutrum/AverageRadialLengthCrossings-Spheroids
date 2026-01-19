@@ -77,11 +77,15 @@ The following are example ouputs from SampleSpheroid.roi with an excursion lengt
   <img src="./images/Fig1.png" width="1000">
 </p>
 
+Figure 1: Plot of the imported ROI in MATLAB. The centroid is plotted as +.  Each perimeter point is a black outlined circle with points that are included in the selected segment filled with red. Here the entire spheroid was analyzed with `theta_start = 0` and `theta_end=360`. 
+Please note that due to differences in the coordinate systems used by FIJI and MATLAB, the *ROIs will appear reflected over the X axis (upsidown)* compared to their original orienation in FIJI
+
 ### Figure 2 
 <p align="center">
   <img src="./images/fig2.png" width="1600">
 </p>
 
+Figure 2: Radial Length plot of SampleSpheroid.roi. X-axis = perimeter points, y-axis = radial length (pixels), orange = radial lengths, magenta dotted line = the average radial length , purple points = valid average radial length crossings
 ### Results 
 The script will print the number of average radial length crossings and the standard deviation of radial lengths 
 
