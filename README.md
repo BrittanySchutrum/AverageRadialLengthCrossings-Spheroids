@@ -41,6 +41,10 @@ Solving for the inflection point $x$, this gives us a simplified equation for fi
 
 $$\text{inflection point}=\frac{lm}{n}+\text{previous point}$$
 
+### Segment Analysis vs. full shape analysis 
+This code is developed to allow for analysis of the whole shape or only a defined angular "slice"/segment. 0 degrees is 3 o'clock and the angle increases counterclockwise 
+To analyse the whole ROI set the inputs of theta_start to 0 and theta_end to 360 degrees. 
+
 ## Usage 
 Install **MATLAB**, JAVA and add the extension **Image Processing Toolbox** by Mathworks inside MATLAB (Home > Add-Ons > search for "Image Processing Toolbox"). 
 
@@ -49,3 +53,46 @@ Once you have prepared your software, put all the following files into **your wo
 * [AverageRadialLengthCrossings.m](https://github.com/amaliegao/Spheroid-Shape-Analysis---Schutrum/blob/main/mastercode.m)
 * [ReadImageJROI.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 * [ROIs2Regions.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
+
+To use the code you only need to *open* AverageRadialLengthCrossings.m 
+
+## Inputs 
+1. ROI file (.roi file type) from FIJI
+2. mimnimim excursion length in pixels
+3. minimim crossing distance in pixels
+4. theta_start
+5. theta_end
+
+## Functions 
+### radiallengths() 
+radiallengths(inputroi, [2048, 2048], theta_start, theta_end) -> Imports ROI into Matlab, calculates radial length to each perimeter point and creates the  [radialdistance_section] vector, plots the perimeter points of the ImageJ ROI with centroid in MATLAB coordinates (figure 1) % by default the pixel dimentions are defined as 2048x2048. The number does not matter unless your ROI is bigger than these dimensions in pixels
+
+### plot_intersections () 
+plot_intersections(radiallengths_section,excursion_length,minimum_distance) -> Plots the radial lengths and determines sustained crossings defined by the excursion length and minimum crossing distance(figure 2) Printed Quantitative Outputs = 1) number of Average Radial Length Crossing (ARLC) and 2) the Standard Deviation of the Radial Length (SDRL)
+
+## Outputs
+The following are example ouputs from SampleSpheroid.roi with an excursion length of 3 and minimim crossing distance of 5 
+### Figure 1 
+<p align="center">
+  <img src="./images/Fig1.png" width="1000">
+</p>
+
+### Figure 2 
+<p align="center">
+  <img src="./images/fig2.png" width="1600">
+</p>
+
+### Results 
+The script will print the number of average radial length crossings and the standard deviation of radial lengths 
+
+## Open Source Scripts Required 
+`ReadImageJROI.m`
+
+This plugin (created by Dylan Muir, 2011) converts an ImageJ ROI to a MATLAB structure. A MATLAB structure is a container for data related to the structure, in this code the structures will contain geometric information about the ROI.
+
+`ROIs2Regions.m`
+
+This plugin (created by Dylan Muir, 2011) converts the ROI structures (returned by ReadImageJROI.m) into binary region masks. 
+
+
+
