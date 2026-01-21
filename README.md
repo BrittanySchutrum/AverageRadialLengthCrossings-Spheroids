@@ -50,7 +50,7 @@ Install **MATLAB**, JAVA and add the extension **Image Processing Toolbox** by M
 
 Once you have prepared your software, put all the following files into **your working directory**:
 
-* [AverageRadialLengthCrossings.m]([https://github.com/amaliegao/Spheroid-Shape-Analysis---Schutrum/blob/main/mastercode.m](https://github.com/BrittanySchutrum/AverageRadialLegnth-Spheroids/blob/main/AverageRadialLengthCrossings.m))
+* [AverageRadialLengthCrossings.m]((https://github.com/BrittanySchutrum/AverageRadialLegnth-Spheroids/blob/main/AverageRadialLengthCrossings.m))
 * [ReadImageJROI.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 * [ROIs2Regions.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 
