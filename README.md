@@ -11,7 +11,7 @@ The average of all radial lengths is used as the crossing threshold (Average Rad
 
 ### Determining an Average Radial Length Crossing with different sensitivities 
 There are two parameters than can be adjusted to optimize the signal to noise ratio of your data set 
-1. **Excursion Length** = the minimum horizontal span (along the average radial length axis) during which a peak or valley remains above or below the mean radial length for it to be classified as a valid crossing
+1. **Excursion Length** = number of points that need to consecutively fall to one side of the average
 2. **Minimum Crossing Distance** = A peak or valley must differ from the average radial length by at least this distance (in pixels) to qualify as a crossing
 
 <p align="center">
