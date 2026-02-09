@@ -15,7 +15,7 @@ There are two parameters than can be adjusted to optimize the signal to noise ra
 2. **Minimum Crossing Distance** = minimim distance between the radial length and the aveage radial length
 
 <p align="center">
-  <img src="./images/Min%20distance%20and%20ex%20length%V2.png" width="350">
+  <img src="./images/Min%20distance%20and%20ex%20length%20V2.png" width="450">
 </p>
 
 ### Finding Inflection Points Using Linear Interpolation 
