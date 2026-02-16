@@ -16,6 +16,7 @@ This README file provides documentation pertaining to the script “AverageRadia
 * [Open Source Scripts Required](#open-source-scripts-required)
     - [ReadImageJROI](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
     - [ROIs2Regions](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
+* [Contact](#contact)
   
 
 ## Introduction and Background 
