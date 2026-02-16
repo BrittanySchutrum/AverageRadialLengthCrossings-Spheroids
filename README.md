@@ -1,6 +1,5 @@
 # Calculating the number of Average Radial Length Crossings (ARLC) 
-This README file provides documentation pertaining to the script “AverageRadialLengthCrossings.m” developed for shape factor analysis of spheroids and organoids in the manuscript “Shape Factor Screening to Quantify Morphological Signatures of Spheroid/Organoid Malignancy and Invasiveness”. This analysis was inspired by radial length crossing metrics proposed by Kilday *et. al.* for mammagram analysis applications [[1]](https://pubmed.ncbi.nlm.nih.gov/18218460/)
-
+This README file provides documentation pertaining to the script “AverageRadialLengthCrossings.m” developed for shape factor analysis of spheroids and organoids in the manuscript **“Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness”**. This analysis was inspired by radial length crossing metrics proposed by [Kilday *et. al.*](https://pubmed.ncbi.nlm.nih.gov/18218460/) for mammagram analysis applications. Scripts were developed in MATLAB version R2023B with Image Processing Toolbox Version 23.2
 
 ### Average Radial Length Crossings 
 Here, the radial length is defined as the Euclidian distance from the centroid to each perimeter point. 
@@ -46,15 +45,17 @@ This code is developed to allow for analysis of the whole shape or only a define
 To analyse the whole ROI set the inputs of theta_start to 0 and theta_end to 360 degrees. 
 
 ## Usage 
-Install **MATLAB**, JAVA and add the extension **Image Processing Toolbox** by Mathworks inside MATLAB (Home > Add-Ons > search for "Image Processing Toolbox"). 
+Install **MATLAB** (version R2023B or later recommended), JAVA and add the extension **Image Processing Toolbox** by Mathworks inside MATLAB (Home > Add-Ons > search for "Image Processing Toolbox"). 
 
-Once you have prepared your software, put all the following files into **your working directory**:
+Once you have prepared your software, put the following 3 files into **the directory you are working from**:
 
 * [AverageRadialLengthCrossings.m](https://github.com/BrittanySchutrum/AverageRadialLegnth-Spheroids/blob/main/AverageRadialLengthCrossings.m)
 * [ReadImageJROI.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 * [ROIs2Regions.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 
-To use the code you only need to *open* AverageRadialLengthCrossings.m 
+To use the code you only need to *open* AverageRadialLengthCrossings.m. ReadImageJROI.m and ROIs2Regions.m do not need to be open but must be in the same directory (folder) as AverageRadialLengthCrossings.m
+
+Date of data creation: Imaging data used for code development was collected in 2019 with study results published in 2020 [Ling,L et.al. Avannced Functional Materials 2020](https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.201910650). ROIs generated from these data sets for the nwe analysis were created in 2025. All Digiatal Phantoms generated 2024-2026. 
 
 ## Inputs 
 1. ROI file (.roi file type) from FIJI
@@ -90,13 +91,25 @@ Figure 2: Radial Length plot of SampleSpheroid.roi. X-axis = perimeter points, y
 The script will print the number of average radial length crossings and the standard deviation of radial lengths 
 
 ## Open Source Scripts Required 
-`ReadImageJROI.m`
+`ReadImageJROI.m` [ReadImageJROI.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 
 This plugin (created by Dylan Muir, 2011) converts an ImageJ ROI to a MATLAB structure. A MATLAB structure is a container for data related to the structure, in this code the structures will contain geometric information about the ROI.
 
-`ROIs2Regions.m`
+`ROIs2Regions.m` [ROIs2Regions.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 
 This plugin (created by Dylan Muir, 2011) converts the ROI structures (returned by ReadImageJROI.m) into binary region masks. 
 
+## Authors
+Primary code development: Brittany Schutrum, Jenny Deng, Amalie Gao, Emily Hur, Ju Hee Kim
 
+## Author Contact Information 
+### Brittany Schutrum 
+**ORCID**: [0000-0002-4462-7812](https://orcid.org/0000-0002-4462-7812)<br>
+**Institution**: Cornell University<br>
+**Emial**: bs773(at)cornell.edu
+
+### Claudia Fischbach 
+**ORCID**: [0000-0002-9368-0150](https://orcid.org/0000-0002-9368-0150)<br>
+**Institution**: Cornell University<br>
+**Emial**: cf99(at)cornell.edu
 
