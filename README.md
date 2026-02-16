@@ -6,7 +6,17 @@ This README file provides documentation pertaining to the script “AverageRadia
   - [Average Radial Length Crossings](#average-radial-length-crossings)
   - [Determining an ARLC with different sensitivities](#determining-an-ARLC-with-different-sensitivities)
   - [Finding ARLC Inflection Points Using Linear Interpolation](#finding-arlc-inflection-points-using-linear-interpolation)
-  - [Segment Analysis vs. Full Shape Analysis](#segment-analysis-vs.-full-shape-analysis) 
+  - [Segment Analysis vs. Full Shape Analysis](#segment-analysis-vs.-full-shape-analysis)
+* [Usage](#usage)
+* [Inputs](#inputs)
+* [Functions](#functions)
+* [Outputs](#outputs)
+  - [sample output results](#figure-1)
+  - [results](#results)
+* [Open Source Scripts Required](#open-source-scripts-required)
+    - [ReadImageJROI](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
+    - [ROIs2Regions](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
+  
 
 ## Introduction and Background 
 
