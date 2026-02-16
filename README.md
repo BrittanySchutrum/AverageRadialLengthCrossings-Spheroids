@@ -16,6 +16,7 @@ This README file provides documentation pertaining to the script “AverageRadia
 * [Open Source Scripts Required](#open-source-scripts-required)
     - [ReadImageJROI](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
     - [ROIs2Regions](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
+* [Related Works](#related-works)
 * [Contact](#author-contact-information)
   
 
@@ -133,3 +134,5 @@ Primary code development: Brittany Schutrum, Jenny Deng, Amalie Gao, Emily Hur, 
 **Institution**: Cornell University<br>
 **Emial**: cf99(at)cornell.edu
 
+## Releated Works
+Several ROI preperation steps may be useful before using this ARLC MATLAB script. Please refer to 'interpolation.ijm' and 'perimeter_points.ijm' located in the [companion repository](https://github.com/BrittanySchutrum/FIJI-Spheroid-Morphological-Signatures) 
