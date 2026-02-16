@@ -134,5 +134,5 @@ Primary code development: Brittany Schutrum, Jenny Deng, Amalie Gao, Emily Hur, 
 **Institution**: Cornell University<br>
 **Emial**: cf99(at)cornell.edu
 
-## Releated Works
+## Related Works
 Several ROI preperation steps may be useful before using this ARLC MATLAB script. Please refer to 'interpolation.ijm' and 'perimeter_points.ijm' located in the [companion repository](https://github.com/BrittanySchutrum/FIJI-Spheroid-Morphological-Signatures) 
