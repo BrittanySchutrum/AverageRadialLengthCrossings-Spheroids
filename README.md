@@ -6,7 +6,7 @@ The ARLC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapte
 ## Contents 
 * [Introduction and Background](#introduction-and-background)
   - [Average Radial Length Crossings](#average-radial-length-crossings)
-  - [Determining an ARLC with different sensitivities](#determining-an-ARLC-with-different-sensitivities)
+  - [Determining an ARLC with different sensitivities](#determining-an-arlc-with-different-sensitivities)
   - [Finding ARLC Inflection Points Using Linear Interpolation](#finding-arlc-inflection-points-using-linear-interpolation)
   - [Segment Analysis vs. Full Shape Analysis](#segment-analysis-vs.-full-shape-analysis)
 * [Usage](#usage)
@@ -81,10 +81,10 @@ Date of data creation: Imaging data used for code development was collected in 2
 
 ## Inputs 
 1. ROI file (.roi file type) from FIJI
-2. mimnimim excursion length in pixels = [number of points that need to consecutively fall to one side of the average](#determining-an-average-radial-length-crossing-with-different-sensitivities)
-3. minimim crossing distance in pixels = [minimim distance between the radial length and the aveage radial length](#determining-an-average-radial-length-crossing-with-different-sensitivities)
-4. theta_start = [angle segment to be analyzed (0 degrees = 3 o'clock)](#segment-analysis-vs.-full-shape-analysis)
-5. theta_end = [end of the angle segment to be analyzed](#segment-analysis-vs.-full-shape-analysis)
+2. [mimnimim excursion length in pixels](#determining-an-average-radial-length-crossing-with-different-sensitivities) = number of points that need to consecutively fall to one side of the average
+3. [minimim crossing distance in pixels](#determining-an-average-radial-length-crossing-with-different-sensitivities) = minimim distance between the radial length and the aveage radial length
+4. [theta_start](#segment-analysis-vs.-full-shape-analysis) = start of the angle segment to be analyzed (0 degrees = 3 o'clock, angles increase counter clockwise)
+5. [theta_end](#segment-analysis-vs.-full-shape-analysis) = end of the angle segment to be analyzed
 
 ## Functions 
 ### radiallengths() 
