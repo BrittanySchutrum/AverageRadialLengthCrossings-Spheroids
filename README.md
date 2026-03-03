@@ -61,8 +61,8 @@ Solving for the inflection point $x$, this gives us a simplified equation for fi
 $$\text{inflection point}=\frac{lm}{n}+\text{previous point}$$
 
 ### Segment Analysis vs. full shape analysis 
-This code is developed to allow for analysis of the whole shape or only a defined angular "slice"/segment. 0 degrees is 3 o'clock and the angle increases counterclockwise 
-To analyse the whole ROI set the inputs of theta_start to 0 and theta_end to 360 degrees. 
+This code is developed to allow for analysis of the whole shape or only a defined angular "slice"/segment. 0 degrees is at 3 o'clock position as the ROI is displayed in MATLAB and the angle increases counterclockwise.
+To analyse the whole ROI (all 360 degrees) set the inputs of theta_start to 0 and theta_end to 360 degrees. 
 
 ## Usage 
 Install **MATLAB** (version R2023B or later recommended), JAVA and add the extension **Image Processing Toolbox** by Mathworks inside MATLAB (Home > Add-Ons > search for "Image Processing Toolbox"). 
@@ -75,7 +75,7 @@ Once you have prepared your software, put the following 3 files into **the direc
 * [ReadImageJROI.m](https://github.com/BrittanySchutrum/ReadImageJROI/blob/master/ReadImageJROI.m)
 * [ROIs2Regions.m](https://github.com/BrittanySchutrum/ReadImageJROI/blob/master/ROIs2Regions.m)
 
-To use the code you only need to *open* AverageRadialLengthCrossings.m. ReadImageJROI.m and ROIs2Regions.m do not need to be open but must be in the same directory (folder) as AverageRadialLengthCrossings.m
+To use the code you only need to *open* `AverageRadialLengthCrossings.m`. ReadImageJROI.m and ROIs2Regions.m do not need to be open but must be in the same directory (folder) as `AverageRadialLengthCrossings.m`
 
 Date of data creation: Imaging data used for code development was collected in 2019 with study results published in 2020 [Ling,L et.al. Avannced Functional Materials 2020](https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.201910650). ROIs generated from these data sets for the nwe analysis were created in 2025. All Digiatal Phantoms generated 2024-2026. 
 
