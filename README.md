@@ -69,6 +69,7 @@ Install **MATLAB** (version R2023B or later recommended), JAVA and add the exten
 ### Prerequisite scripts to load FIJI ROIs into MATLAB 
 The ALRC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapted from Dylan Muir in the following fork https://github.com/BrittanySchutrum/ReadImageJROI.  These scipts Read an ImageJ ROI into a matlab structure and convert a set of imported ImageJ ROIs into a Matlab regions structure. Download [ReadImageJROI.m](https://github.com/BrittanySchutrum/ReadImageJROI/blob/master/ReadImageJROI.m) and [ROIs2Regions.m](https://github.com/BrittanySchutrum/ReadImageJROI/blob/master/ROIs2Regions.m) as well as [AverageRadialLengthCrossings.m](https://github.com/BrittanySchutrum/AverageRadialLegnth-Spheroids/blob/main/AverageRadialLengthCrossings.m)
 
+### Average Radial Length Crossing Analysis 
 Once you have prepared your software, put the following 3 files into **the directory you are working from**:
 
 * [AverageRadialLengthCrossings.m](https://github.com/BrittanySchutrum/AverageRadialLegnth-Spheroids/blob/main/AverageRadialLengthCrossings.m)
