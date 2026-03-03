@@ -82,10 +82,10 @@ Date of data creation: Imaging data used for code development was collected in 2
 
 ## Inputs 
 1. ROI file (.roi file type) from FIJI
-2. [mimnimim excursion length in pixels](#determining-an-average-radial-length-crossing-with-different-sensitivities) = number of points that need to consecutively fall to one side of the average
-3. [minimim crossing distance in pixels](#determining-an-average-radial-length-crossing-with-different-sensitivities) = minimim distance between the radial length and the aveage radial length
-4. [theta_start](#segment-analysis-vs.-full-shape-analysis) = start of the angle segment to be analyzed (0 degrees = 3 o'clock, angles increase counter clockwise)
-5. [theta_end](#segment-analysis-vs.-full-shape-analysis) = end of the angle segment to be analyzed
+2. mimnimim excursion length in pixels = number of points that need to consecutively fall to one side of the average
+3. minimim crossing distance in pixels = minimim distance between the radial length and the aveage radial length
+4. theta_start = start of the angle segment to be analyzed (0 degrees = 3 o'clock, angles increase counter clockwise)
+5. theta_end = end of the angle segment to be analyzed
 
 ## Functions 
 ### radiallengths() 
