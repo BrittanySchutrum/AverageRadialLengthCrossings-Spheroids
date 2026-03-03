@@ -1,7 +1,7 @@
 # Calculating the number of Average Radial Length Crossings (ARLC) 
 This README file provides documentation pertaining to the script `AverageRadialLengthCrossings.m` developed for shape factor analysis of spheroids and organoids in the manuscript **“Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness”**. This analysis was inspired by radial length crossing metrics proposed by [Kilday *et. al.*](https://pubmed.ncbi.nlm.nih.gov/18218460/) for mammagram analysis applications. Scripts were developed in MATLAB version R2023B-R2024B with Image Processing Toolbox Version 23.2-24.2. 
 
-The ALRC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapted from Dylan Muir in the following fork https://github.com/BrittanySchutrum/ReadImageJROI.  
+The ARLC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapted from Dylan Muir in the following fork https://github.com/BrittanySchutrum/ReadImageJROI.  
 
 ## Contents 
 * [Introduction and Background](#introduction-and-background)
