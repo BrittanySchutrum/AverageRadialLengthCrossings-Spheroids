@@ -122,6 +122,7 @@ This plugin (created by Dylan Muir, 2011) converts the ROI structures (returned 
 
 ## Authors
 Primary code development: Brittany Schutrum, Jenny Deng, Amalie Gao, Emily Hur, Ju Hee Kim
+Cornell University Meinig School of Biomedical Engineering
 
 ## Author Contact Information 
 ### Brittany Schutrum 
