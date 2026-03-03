@@ -1,5 +1,7 @@
 # Calculating the number of Average Radial Length Crossings (ARLC) 
-This README file provides documentation pertaining to the script “AverageRadialLengthCrossings.m” developed for shape factor analysis of spheroids and organoids in the manuscript **“Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness”**. This analysis was inspired by radial length crossing metrics proposed by [Kilday *et. al.*](https://pubmed.ncbi.nlm.nih.gov/18218460/) for mammagram analysis applications. Scripts were developed in MATLAB version R2023B-R2024B with Image Processing Toolbox Version 23.2-24.2
+This README file provides documentation pertaining to the script `AverageRadialLengthCrossings.m` developed for shape factor analysis of spheroids and organoids in the manuscript **“Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness”**. This analysis was inspired by radial length crossing metrics proposed by [Kilday *et. al.*](https://pubmed.ncbi.nlm.nih.gov/18218460/) for mammagram analysis applications. Scripts were developed in MATLAB version R2023B-R2024B with Image Processing Toolbox Version 23.2-24.2. 
+
+The ALRC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapted from Dylan Muir in the following fork https://github.com/BrittanySchutrum/ReadImageJROI.  
 
 ## Contents 
 * [Introduction and Background](#introduction-and-background)
@@ -13,9 +15,6 @@ This README file provides documentation pertaining to the script “AverageRadia
 * [Outputs](#outputs)
   - [sample output results](#figure-1)
   - [results](#results)
-* [Open Source Scripts Required](#open-source-scripts-required)
-    - [ReadImageJROI](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
-    - [ROIs2Regions](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 * [Related Works](#related-works)
 * [Contact](#author-contact-information)
   
@@ -67,12 +66,14 @@ To analyse the whole ROI set the inputs of theta_start to 0 and theta_end to 360
 
 ## Usage 
 Install **MATLAB** (version R2023B or later recommended), JAVA and add the extension **Image Processing Toolbox** by Mathworks inside MATLAB (Home > Add-Ons > search for "Image Processing Toolbox"). 
+### Prerequisite scripts to load FIJI ROIs into MATLAB 
+The ALRC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapted from Dylan Muir in the following fork https://github.com/BrittanySchutrum/ReadImageJROI.  These scipts Read an ImageJ ROI into a matlab structure and convert a set of imported ImageJ ROIs into a Matlab regions structure. Download [ReadImageJROI.m](https://github.com/BrittanySchutrum/ReadImageJROI/blob/master/ReadImageJROI.m) and [ROIs2Regions.m](https://github.com/BrittanySchutrum/ReadImageJROI/blob/master/ROIs2Regions.m) as well as [AverageRadialLengthCrossings.m](https://github.com/BrittanySchutrum/AverageRadialLegnth-Spheroids/blob/main/AverageRadialLengthCrossings.m)
 
 Once you have prepared your software, put the following 3 files into **the directory you are working from**:
 
 * [AverageRadialLengthCrossings.m](https://github.com/BrittanySchutrum/AverageRadialLegnth-Spheroids/blob/main/AverageRadialLengthCrossings.m)
-* [ReadImageJROI.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
-* [ROIs2Regions.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
+* [ReadImageJROI.m](https://github.com/BrittanySchutrum/ReadImageJROI/blob/master/ReadImageJROI.m)
+* [ROIs2Regions.m](https://github.com/BrittanySchutrum/ReadImageJROI/blob/master/ROIs2Regions.m)
 
 To use the code you only need to *open* AverageRadialLengthCrossings.m. ReadImageJROI.m and ROIs2Regions.m do not need to be open but must be in the same directory (folder) as AverageRadialLengthCrossings.m
 
@@ -111,17 +112,11 @@ Figure 2: Radial Length plot of SampleSpheroid.roi. X-axis = perimeter points, y
 ### Results 
 The script will print the number of average radial length crossings and the standard deviation of radial lengths 
 
-## Open Source Scripts Required 
-`ReadImageJROI.m` [ReadImageJROI.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
 
-This plugin (created by Dylan Muir, 2011) converts an ImageJ ROI to a MATLAB structure. A MATLAB structure is a container for data related to the structure, in this code the structures will contain geometric information about the ROI.
-
-`ROIs2Regions.m` [ROIs2Regions.m](https://github.com/DylanMuir/ReadImageJROI/blob/master/ROIs2Regions.m)
-
-This plugin (created by Dylan Muir, 2011) converts the ROI structures (returned by ReadImageJROI.m) into binary region masks. 
 
 ## Authors
 Primary code development: Brittany Schutrum, Jenny Deng, Amalie Gao, Emily Hur, Ju Hee Kim
+
 Cornell University Meinig School of Biomedical Engineering
 
 ## Author Contact Information 
