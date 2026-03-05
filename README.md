@@ -3,6 +3,8 @@ This README file provides documentation pertaining to the script `AverageRadialL
 
 The ARLC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapted from Dylan Muir in the following fork https://github.com/BrittanySchutrum/ReadImageJROI.  
 
+DOI: 10.5281/zenodo.18880960
+
 ## Contents 
 * [Introduction and Background](#introduction-and-background)
   - [Average Radial Length Crossings](#average-radial-length-crossings)
