@@ -3,7 +3,7 @@ This README file provides documentation pertaining to the script `AverageRadialL
 
 The ARLC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapted from Dylan Muir in the following fork https://github.com/BrittanySchutrum/ReadImageJROI.  
 
-DOI: 10.5281/zenodo.18880960
+Code DOI: 10.5281/zenodo.18880960
 
 ## Contents 
 * [Introduction and Background](#introduction-and-background)
@@ -135,3 +135,5 @@ Cornell University Meinig School of Biomedical Engineering
 
 ## Related Works
 Several ROI preperation steps may be useful before using this ARLC MATLAB script. Please refer to 'interpolation.ijm' and 'perimeter_points.ijm' located in the [companion repository](https://github.com/BrittanySchutrum/FIJI-Spheroid-Morphological-Signatures) 
+
+`ReadImageJROI.m` and `ROIs2Regions.m` were adapted from Dylan Muir [https://github.com/DylanMuir/ReadImageJROI/tree/maste](https://github.com/DylanMuir/ReadImageJROI/tree/master). With this orgininal work published in Frontiers in Neuroinformatics: DR Muir and BM Kampa. 2014. [FocusStack and StimServer: A new open source MATLAB toolchain for visual stimulation and analysis of two-photon calcium neuronal imaging data](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2014.00085/full), Frontiers in Neuroinformatics. 
