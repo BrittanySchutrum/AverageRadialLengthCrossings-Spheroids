@@ -1,10 +1,10 @@
 %Average Radial Length Crossing Analysis - please see the README file
 
-%Before you begin, you will need the following functions developed by Dylan
+%Before you begin, you will need the following forked functions developed by Dylan
 %Muir added to your working directory
-%https://github.com/DylanMuir/ReadImageJROI
-% 1) ReadImageJROI.m
-% 2) ROIs2Regions.m
+
+% 1) ReadImageJROI.m  FORKED version https://github.com/BrittanySchutrum/ReadImageJROI
+% 2) ROIs2Regions.m %https://github.com/DylanMuir/ReadImageJROI
 
 % Non-function script
 close all
