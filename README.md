@@ -3,6 +3,8 @@ This README file provides documentation pertaining to the script `AverageRadialL
 
 The ARLC analysis requires scripts `ReadImageJROI.m` and `ROIs2Regions.m` adapted from Dylan Muir in the following fork https://github.com/BrittanySchutrum/ReadImageJROI.  
 
+To quantify an **entire folder of ROIs get a CSV file of the results please use** `ARLCBatchProcess.m`. This script will not output the plots included in `AverageRadialLengthCrossings.m`
+
 Code DOI: 10.5281/zenodo.18880960
 
 ## Contents 
@@ -80,10 +82,12 @@ Once you have prepared your software, put the following 3 files into **the direc
 
 To use the code you only need to *open* `AverageRadialLengthCrossings.m`. ReadImageJROI.m and ROIs2Regions.m do not need to be open but must be in the same directory (folder) as `AverageRadialLengthCrossings.m`
 
-Date of data creation: Imaging data used for code development was collected in 2019 with study results published in 2020 [Ling,L et.al. Avannced Functional Materials 2020](https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.201910650). ROIs generated from these data sets for the nwe analysis were created in 2025. All Digiatal Phantoms generated 2024-2026. 
+If you would like to process a **whole folder of ROIs and get the results in a CSV file please use** [ARLCBatchProcess.m](https://github.com/BrittanySchutrum/AverageRadialLengthCrossings-Spheroids/blob/main/ARLCBatchProcess.m) in leu of `AverageRadialLengthCrossings.m` and select your folder of ROIs when prompted instead of tying in the file name in the code. 
+
+Date of data creation: Imaging data used for code development was collected in 2019 with study results published in 2020 [Ling,L et.al. Avannced Functional Materials 2020](https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.201910650). ROIs generated from these data sets for the new analysis were created in 2025. All Digiatal Phantoms generated 2024-2026. 
 
 ## Inputs 
-1. ROI file (.roi file type) from FIJI
+1. ROI file (.roi file type) from FIJI  (or a selected folder of ROIs if using the batch process version)
 2. mimnimim excursion length in pixels = number of points that need to consecutively fall to one side of the average
 3. minimim crossing distance in pixels = minimim distance between the radial length and the aveage radial length
 4. theta_start = start of the angle segment to be analyzed (0 degrees = 3 o'clock, angles increase counter clockwise)
